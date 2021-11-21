@@ -428,7 +428,8 @@ h4 {
 @media screen and (max-width: 767px) {
   .carousel-inner .carousel-item > div {
     display: none;
-    text-align: -webkit-center; }
+    text-align: -webkit-center;
+    text-align: -moz-center; }
   .carousel-inner .carousel-item > div:first-child {
     display: block; } }
 

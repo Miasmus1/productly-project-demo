@@ -72,6 +72,7 @@
   .carousel-inner .carousel-item > div {
     display: none;
     text-align: -webkit-center;
+    text-align: -moz-center;
   }
   .carousel-inner .carousel-item > div:first-child {
     display: block;
