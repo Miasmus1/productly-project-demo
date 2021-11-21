@@ -1,0 +1,85 @@
+.myCarousel {
+  display: flex;
+  flex-direction: column;
+
+  &-title {
+    color: $title-color;
+    font-size: 3.4rem;
+    font-weight: 700;
+  }
+
+  &-text {
+    margin-top: 1rem;
+    color: $text-color;
+    font-weight: 500;
+  }
+
+  @media screen and (max-width: 767px) {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.carousel {
+  max-width: 111rem;
+  margin: 5.5rem 0 10rem 0;
+
+  &-indicators {
+    bottom: -7.5rem;
+
+    & [data-bs-target] {
+      width: 1.6rem;
+      height: 1.6rem;
+      border-radius: 100%;
+      background-color: $orange-color;
+    }
+  }
+
+  &-inner {
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+  }
+}
+
+.card {
+  border-color: transparent;
+  max-height: 40rem;
+
+  &-body {
+    padding: 2.5rem 0;
+    max-width: 30rem;
+
+    & > p {
+      color: $text-color;
+    }
+  }
+
+  &-sub-heading {
+    color: $title-color;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 3.4rem;
+    margin-top: 1rem;
+  }
+
+  &:not(:first-child) {
+    margin-left: 3rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .carousel-inner .carousel-item > div {
+    display: none;
+    text-align: -webkit-center;
+  }
+  .carousel-inner .carousel-item > div:first-child {
+    display: block;
+  }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}

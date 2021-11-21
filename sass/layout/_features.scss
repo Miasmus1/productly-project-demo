@@ -1,0 +1,156 @@
+.features {
+  position: relative;
+
+  &-wrapper {
+    max-width: 49rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media screen and (max-width: 767px) {
+      align-items: center;
+      margin: 0 auto;
+    }
+  }
+
+  &-title {
+    color: $title-color;
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 5.4rem;
+
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+  }
+
+  &-subheading {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: $title-color;
+    margin-top: 3rem;
+  }
+
+  &-text {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    margin-top: 1.5rem;
+    font-weight: 500;
+  }
+
+  @media screen and (max-width: 1400px) {
+    background-image: linear-gradient(to bottom, #ffe5d22e, #fff4e50b);
+  }
+}
+
+.img-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .all-boxes {
+    margin: 5rem 0 0 0;
+    text-align: center;
+  }
+}
+
+/* Colored Boxes */
+
+.box {
+  display: inline-block;
+  border: $button-border;
+  border-radius: 2rem;
+  width: 5rem;
+  height: 5rem;
+
+  &-wrapper {
+    @media screen and (max-width: 992px) {
+      margin-bottom: 5rem;
+    }
+  }
+
+  &-purple {
+    background-color: #7752be;
+    box-shadow: 0px 5px 10px 1px #7852be80;
+  }
+
+  &-orange {
+    background-color: #fab005;
+    box-shadow: 0px 5px 10px 1px #fab00580;
+  }
+
+  &-red {
+    background-color: #f03e3d;
+    box-shadow: 0px 5px 10px 1px #f03e3d80;
+  }
+
+  &-blue {
+    background-color: #4dadf7;
+    box-shadow: 0px 5px 10px 1px #4dadf780;
+  }
+}
+
+#features-custom-bg {
+  width: max-content;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  z-index: -10;
+  overflow: hidden;
+
+  @media screen and (max-width: 1400px) {
+    display: none;
+  }
+}
+
+/* styled list section */
+
+.styled-list {
+  padding: 0;
+  max-width: 43rem;
+
+  & > li {
+    max-width: 45rem;
+    margin-top: 3rem;
+    list-style: none;
+    background-image: url(../assets/list-style.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    line-height: 2.6rem;
+    padding-left: 6.5rem;
+  }
+}
+
+/*///////////////////*/
+/* design thinking */
+
+@media screen and (max-width: 767px) {
+  .responsive-bg {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -10;
+
+    &--1 {
+      background-image: url(../assets/image1-transparent.png);
+    }
+
+    &--2 {
+      background-image: url(../assets/image2-transparent.png);
+    }
+
+    &--3 {
+      background-image: url(../assets/image3-transparent.png);
+    }
+
+    &--4 {
+      background-image: url(../assets/image4-transparent.png);
+    }
+  }
+}

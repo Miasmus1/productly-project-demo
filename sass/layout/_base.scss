@@ -1,0 +1,93 @@
+$primary-color: #173a56; /* Logo and some button text, borders color */
+$orange-color: #ff9900;
+$title-color: #2f281e;
+$text-color: #544837;
+
+$button-border: 1px solid transparent;
+$button-radius: 5px;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+
+  @media screen and (max-width: 992px) {
+    font-size: 56.25%;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 50%;
+  }
+
+  @media screen and (max-width: 576px) {
+    font-size: 43.75%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: $text-color;
+  max-width: 140rem;
+  padding: 0 15rem;
+  margin: 0 auto;
+
+  @media screen and (max-width: 1400px) {
+    width: unset;
+    padding: 0 4rem;
+  }
+
+  @media screen and (max-width: 767px) {
+    width: unset;
+    padding: 0 1rem;
+  }
+}
+
+img {
+  max-width: 100%;
+
+  @media screen and (max-width: 767px) {
+    max-width: 80%;
+  }
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+p {
+  margin: 0 0 3px 0;
+  font-size: 1.6rem;
+}
+
+h4 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+/* Margin between rows */
+.row {
+  margin-bottom: 11rem;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 9rem;
+
+    &:last-child {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+/* Helpers */
+.mb-7 {
+  margin-bottom: 7rem;
+}

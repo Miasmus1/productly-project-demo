@@ -1,0 +1,76 @@
+.navbar {
+  color: $title-color;
+  margin-top: 2rem;
+  height: 7.8rem;
+  align-items: center;
+
+  @media screen and (max-width: 1400px) {
+    height: unset;
+    padding: 0;
+  }
+
+  &-nav {
+    font-size: 1.4rem;
+    flex-basis: 35rem;
+  }
+
+  &-toggler {
+    border-color: $primary-color;
+
+    &-icon {
+      width: 2.5rem;
+      height: 2.5rem;
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.95%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+  }
+
+  &-collapse {
+    text-align: center;
+  }
+
+  &-btn {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin-left: 2.5rem;
+
+    @media screen and (max-width: 1400px) {
+      margin: 2rem 0;
+    }
+
+    & > a {
+      border: $button-border;
+      border-radius: $button-radius;
+      padding: 1rem 2rem;
+    }
+
+    &--sign-in {
+      border-color: #bcd0e5;
+      color: $primary-color;
+    }
+
+    &--sign-up {
+      background-color: $orange-color;
+      color: white;
+      margin-left: 1rem;
+    }
+  }
+}
+
+.nav-link {
+  color: inherit;
+
+  @media screen and (max-width: 992px) {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2.2em;
+  }
+
+  &:hover {
+    color: $orange-color;
+  }
+}
+
+// .nav-link:hover {
+//   color: $orange-color;
+// }

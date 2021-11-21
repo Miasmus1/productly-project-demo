@@ -1,0 +1,151 @@
+/* comments section */
+.comments {
+  position: relative;
+  height: 83.5rem;
+
+  &-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 54rem;
+    text-align: center;
+    margin: 0 auto;
+
+    & > p {
+      color: #567592;
+      font-weight: 500;
+    }
+
+    & > a {
+      margin: auto;
+      font-size: 1.6rem;
+      font-weight: 700;
+    }
+
+    @media screen and (max-width: 576px) {
+      width: 35rem;
+    }
+  }
+
+  @media screen and (max-width: 1400px) {
+    background-image: linear-gradient(to bottom, #ffe5d29e, #fff4e515);
+    clip-path: ellipse(50% 45% at 50% 50%);
+    height: 40rem;
+  }
+}
+
+.avatar {
+  position: absolute;
+
+  &-img {
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+  }
+
+  &-1 {
+    top: 220px;
+    left: -25px;
+  }
+
+  &-2 {
+    top: 520px;
+    left: 1000px;
+  }
+
+  &-3 {
+    top: 150px;
+    left: 960px;
+  }
+
+  &-4 {
+    top: 640px;
+    left: 670px;
+  }
+
+  &-5 {
+    top: 550px;
+    left: 210px;
+  }
+
+  @media screen and (max-width: 1400px) {
+    display: none;
+  }
+}
+
+#comments-custom-bg {
+  min-width: max-content;
+  position: absolute;
+  top: 0;
+  left: -40rem;
+  z-index: -10;
+  overflow: hidden;
+
+  @media screen and (max-width: 1920px) {
+    min-width: unset;
+    top: 20rem;
+    left: 0;
+  }
+
+  @media screen and (max-width: 1400px) {
+    display: none;
+  }
+}
+
+/* Comment clouds*/
+
+.thought {
+  position: absolute;
+  top: -35px;
+  padding: 1rem 3rem;
+  border-radius: 4rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 1;
+  font-size: 1.6rem;
+  font-weight: 500;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+
+  &-right::before,
+  &-right::after,
+  &-left::before,
+  &-left::after {
+    content: " ";
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 20px;
+    height: 20px;
+    bottom: -10px;
+    border-radius: 18px;
+  }
+  &-right {
+    left: 60px;
+    width: max-content;
+
+    &::before {
+      left: 25px;
+    }
+
+    &::after {
+      width: 8px;
+      height: 8px;
+      left: 17px;
+      bottom: -20px;
+    }
+  }
+
+  &-left {
+    left: -285px;
+    width: max-content;
+
+    &::before {
+      left: 280px;
+    }
+
+    &::after {
+      width: 8px;
+      height: 8px;
+      left: 297px;
+      bottom: -20px;
+    }
+  }
+}
